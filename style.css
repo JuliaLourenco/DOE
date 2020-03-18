@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+}
+/* body*/
+body{
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    /*fonte*/
+    font-family: 'Roboto', sans-serif;
+    /*cor do fundo*/
+    background-color:#e2e2e2  ;
+}
+.projeto{
+    background-color: #be1d22;
+    color: white;
+    text-align: center;
+}
+.logo{
+    width: 650px;
+}
+/* alingamento principal */
+
+header, main,  footer{
+
+text-align: center;
+}
+/*info */
+
+.info{
+
+   text-align: center;
+    background-color: #be1d22;
+    color: white;
+   /* border-radius: 6px;*/
+    margin-top: 70px;
+    margin-bottom: 200px;
+    
+}
+
+
+/*titulos*/
+header h1, main h2{
+   margin-bottom: 5 0px ; 
+}
+header h2 span{
+    color: #be1d22;
+}
+.blood{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 4px;
+    color: white;
+    background-color: #be1d22;
+    border-radius: 6px;
+}
+
+main  h2 span {
+    color: #be1d22;
+}
+
+
+
+/* primeiro botão*/
+header button{
+    margin-top:20px ;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color:#be1d22 ;
+    color: white;
+    font-weight: bold;
+    border: none;
+
+}
+
+.donors{
+display: grid;
+
+grid-template-columns: 3fr 3fr 3fr 3fr ;
+}
+/* form */
+section.form{
+
+  display: grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-gap: 40px;
+     
+    align-items: center;
+
+    background-color: #be1d22;
+    padding: 16px 60px;
+    border-radius: 6px;
+
+}
+ section.form input,
+ section.form button{
+     
+      
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+
+    border-top-left-radius: 4px ;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius:4px ;
+    border-bottom-right-radius: 4px;
+    border: 1px white;
+   /* background-color: transparent;*/
+ }
+
+ section.form button{
+
+    color: #be1d22;
+    font-size: medium;
+    font-weight: bold;
+ }
+
+
+ /*titulo do form*/
+ section.form h2{
+     text-align: center;
+     margin-right: auto;
+     margin-left: auto;
+     color: white;
+     font-size: 20px;
+ }
+
+header, .form, main{
+
+/* espaçãmento com margem */
+
+    margin-bottom: 70px;
+
+ /*limites dos elementos da pagina */
+
+ width:90%;
+ max-width: 500px;
+ margin-left: auto;
+ margin-right: auto;
+
+}
+
+
+/*rodapé*/
+
+footer{
+    margin-top: auto;
+    padding: 16px;
+    color: white;
+    background-color:#be1d22;
+
+    border: 1px solid#be1d22;
+}
+
+/* funcionalidades com js*/
+
+section.form{
+    transition: all 300ms;
+}
+
+section.form.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-bottom: -70px;
+}
